@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    DAVID AVILES -- < s0738969@monmouth.edu >
+    NICK HELMSTETTER -- < s0857962@monmouth.edu >
+    JAKE VERNON -- < s0826889@monmouth.edu >
+    MATT MARINO -- < s0789666@monmouth.edu >
+
+# THANKS
+
+    MONMOUTH UNIVERSITY - WEST LONG BRANCH, NJ
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
