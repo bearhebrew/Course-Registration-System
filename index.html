@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Monmouth University Course Scheduler</title>
+        <meta name="description" content="Monmoouth University Class Scheduler">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/fullcalendar.css">
+        <link rel="stylesheet" type="text/css" href="css/fullcalendar.print.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script language="javascript" src="js/fullcalendar.js"></script>
+        <script language="javascript" src="js/gcal.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+	<div id="image" role="img" aria-label="Monmouth University Class Scheduler">
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <!--<nav>-->
+                <ul id="jsddm">
+                    <li><a href="#">Welcome Back, John Doe</a>
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Personal Settings</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                 </ul>
+                <!--<h1 class="title">h1.title</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                    </ul>
+                </nav>-->
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+               <div id="contents">
+    <div id="search-wrap">
+        <div class="add_button">+</div>
+    <form id="search">
+        <div id="course_search_1" class="course_search">
+            <h3 class="course_search_title">Course Search #1 Criteria</h3>
+            <hr class="form-separator" />
+<p>Term:
+<select>
+    <option value ="spring14">Spring 2014</option>
+    <option value ="fall14">Fall 2014</option>
+</select></p>
+
+<p>Subject: <select>
+    <option value="" style="display:none;"></option>
+    <option value ="computerScience">Computer Science</option>
+    <option value ="softwareEngineering">Software Engineering</option>
+</select></p>
+           
+<p>Course Number: <input class="search-field" type="text" name="course" size="10"></input></p>
+<p>Section Number: <input class="search-field" type="text" name="section" size="10"></input></p>
+
+<p>Course Type
+<select>
+    <option value="" style="display:none;"></option>
+    <option value ="cd">Cultural Diversity</option>
+    <option value ="gu">Global Understanding</option>
+</select></p>
+
+<hr class="form-separator" />
+
+            <p>Days of The Week: 
+    <input class="days" type ="checkbox" name="day" value="monday"> Mon </input>
+<input class="days" type ="checkbox" name="day" value="tuesday"> Tue </input>
+<input class="days" type ="checkbox" name="day" value="wednesday"> Wed </input>
+<input class="days" type ="checkbox" name="day" value="thursday"> Thurs </input>
+<input class="days" type ="checkbox" name="day" value="friday"> Fri </input>
+<input class="days" type ="checkbox" name="day" value="friday"> Sat </input>
+</p>
+
+            <p>Instructor: <input class="search-field" type="text" name="instructor"></input></p>
+            <a href="javascript:void(0)" class="remove_button">Remove me</a>
+        </div>
+    </form>
+    </div>
+    <div id="results-wrap">
+        <div id="results_wrap">
+            <form id="results">
+                <div class="result">
+                <div class="check"></div>
+                <div class="info">
+                <a class="title" href="#"><span class="subject">PR</span>-<span class="number">432</span>-<span class="section">01</span> <span class="short-name">Ethics Prf Sci Engineer</span></a>
+                <div class="details">
+                <p class="bold"><span class="term">13/FA</span> <span class="start">10:00</span>-<span class="end">11:30</span> <span class="days">MT</span></p>
+                <p class="bold">Room: <span class="room nobold">BH229</span> <span class="nobold">LEC</span></p>
+                <p class="bold">Instructor: <span class="instructor nobold">A. Milewski</span></p>
+                <p class="bold">Status Cap/Avail: <span class="status nobold">Open</span> <span class="cap nobold">25</span>/<span class="avail nobold">3</span></p>
+                </div>
+        <!--<img class="warning" src="#" />
+        <p><span class="credits">3</span> Credits</p>
+        <p><span class="course-types">GS, ISP</span></p>
+        -->
+        </div>
+        <input id="result_1" name="result_1" type="checkbox">
+        </div>
+        </form>
+        </div>
+    </div>
+    <div id="main-cal">
+        <div id="calendar"></div>
+    </div>
+</div>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+    </div><!-- background -->
+
+        <!--<div class="footer-container">
+            <footer class="wrapper">
+                <h3>2014 &copy; Our Company Name I Forgot</h3>
+            </footer>
+        </div>-->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
