@@ -1,4 +1,4 @@
-MU-Scheduler
+Course Registration System
 ============
 
-Monmouth Class Scheduler
+Course Registration System
